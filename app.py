@@ -43,23 +43,6 @@ def predict_class(image_path):
 
     return likely_class
 
-# Database configuration
-# db_config = {
-#     "host": "localhost",
-#     "user": "root",
-#     "password": "",
-#     "database": "explora",
-# }
-
-# connection = mysql.connector.connect(**db_config)
-
-# def execute_querry(query):
-#     cursor = connection.cursor(dictionary=True)
-#     cursor.execute(query)
-#     result = cursor.fetchall()
-#     cursor.close()
-#     return result
-
 @app.route("/", methods=['GET'])
 def homepage():
     return jsonify({
